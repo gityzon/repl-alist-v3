@@ -1,0 +1,22 @@
+run = ["bash", "main.sh"]
+
+entrypoint = "main.sh"
+
+[env]
+
+#！！使用远程数据库
+
+
+#！添加远程数据库连接参数：
+#！在"Secrets(Environment variables)添加以下环境变量"
+################################################
+#！    KEY        |      value(example)
+#！DB_TYPE        |      postgres或mysql
+#！DB_HOST        |      服务器地址
+#！DB_PORT        |      服务器端口
+#！DB_USER        |      数据库用户名
+#！DB_PASS        |      数据库密码
+#！DB_SLL_MODE    |      数据库SLL方式  pgSQL和mysql不一样.见下
+################################################
+#！！SLL方式：pgSQL：一般是require  | mysql：true或false
+#
